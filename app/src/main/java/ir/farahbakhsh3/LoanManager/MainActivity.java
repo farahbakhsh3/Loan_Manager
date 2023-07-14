@@ -1,7 +1,11 @@
 package ir.farahbakhsh3.LoanManager;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarMain.toolbar);
+        setSupportActionBar(binding.appBarMain.toolbarMain);
 
 //        binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -39,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         DrawerLayout drawer = binding.drawerLayout;
-        NavigationView navigationView = binding.navView;
-        BottomNavigationView bottomNavView = binding.appBarMain.bottomNavView; //findViewById(R.id.bottom_nav_view);
+        NavigationView navigationView = binding.navViewMain;
+        BottomNavigationView bottomNavView = findViewById(R.id.bottom_nav_view_main);
 
         mAppBarConfiguration2 = new AppBarConfiguration.Builder(
                 R.id.nav_settings,
@@ -84,5 +88,16 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId() == R.id.action_menu_settings) {
+            Intent GoActivity = new Intent(this, AddNewLoanActivity.class);
+            startActivity(GoActivity);
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

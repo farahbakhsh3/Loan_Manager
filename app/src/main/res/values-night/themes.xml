@@ -13,4 +13,9 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="BottomNavTheme">
+        <item name="colorPrimary">#FF5722</item>
+    </style>
+
 </resources>

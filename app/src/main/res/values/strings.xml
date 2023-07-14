@@ -6,16 +6,20 @@
     <string name="menu_slideshow">بازیابی</string>
     <string name="menu_aboutus">درباره ما</string>
 
+    <string name="title_add_new_loan_properties">مشخصات قسط</string>
+    <string name="title_add_new_loan_save">ثبت نهایی</string>
+
     <string name="title_home">دفترچه</string>
     <string name="title_dashboard">تقویم</string>
     <string name="title_notifications">معوقات</string>
 
-    <string name="Add">افزودن</string>
+    <string name="AddActionMenu">افزودن قسط جدید</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle">farahbakhsh3@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
+
+    <string name="title_activity_add_new_loan">ثبت مشخصات قسط جدید</string>
 
 </resources>
