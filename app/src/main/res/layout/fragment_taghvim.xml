@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context=".ui.Taghvim.TaghvimFragment">
+
+
+    <TextView
+        android:id="@+id/text_month_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="12pt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ir.mirrajabi.persiancalendar.PersianCalendarView
+        android:id="@+id/persian_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/text_month_year"
+        app:pcv_colorBackground="#EFFFF0"
+        app:pcv_colorDayName="#8C0000"
+        app:pcv_colorHoliday="#FF0000"
+        app:pcv_colorHolidaySelected="#f1f2f3"
+        app:pcv_colorNormalDay="#7E7E7E"
+        app:pcv_colorNormalDaySelected="#FFC204"
+        app:pcv_eventUnderlineColor="#BF3206"
+        app:pcv_fontSize="12pt"
+        app:pcv_headersFontSize="10pt"
+        app:pcv_todayBackground="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/text_persiandate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        app:layout_constraintTop_toBottomOf="@id/persian_calendar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

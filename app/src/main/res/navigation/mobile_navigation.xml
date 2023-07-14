@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_daftarche">
+
+    <fragment
+        android:id="@+id/navigation_daftarche"
+        android:name="ir.farahbakhsh3.LoanManager.ui.Daftarche.DaftarcheFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_daftarche">
+        <action
+            android:id="@+id/action_navigation_daftarche_to_navigation_taghvim"
+            app:destination="@id/navigation_taghvim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_taghvim"
+        android:name="ir.farahbakhsh3.LoanManager.ui.Taghvim.TaghvimFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_taghvim">
+        <action
+            android:id="@+id/action_navigation_taghvim_to_navigation_moavagh"
+            app:destination="@id/navigation_moavagh" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_moavagh"
+        android:name="ir.farahbakhsh3.LoanManager.ui.Moavagh.MoavaghFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_moavagh">
+        <action
+            android:id="@+id/action_navigation_moavagh_to_navigation_daftarche"
+            app:destination="@id/navigation_daftarche" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="ir.farahbakhsh3.LoanManager.ui.Settings.SettingsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_nav_settings_to_nav_backup"
+            app:destination="@id/nav_backup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_backup"
+        android:name="ir.farahbakhsh3.LoanManager.ui.Backup.BackupFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_backup">
+        <action
+            android:id="@+id/action_nav_backup_to_nav_restore"
+            app:destination="@id/nav_restore" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_restore"
+        android:name="ir.farahbakhsh3.LoanManager.ui.Restore.RestoreFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_restore">
+        <action
+            android:id="@+id/action_nav_restore_to_nav_aboutus"
+            app:destination="@id/nav_aboutus" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="ir.farahbakhsh3.LoanManager.ui.AboutUs.AboutUsFragment"
+        android:label="@string/menu_aboutus"
+        tools:layout="@layout/fragment_aboutus">
+        <action
+            android:id="@+id/action_nav_aboutus_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </fragment>
+
+</navigation>
