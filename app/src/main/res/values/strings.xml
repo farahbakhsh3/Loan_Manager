@@ -2,7 +2,7 @@
     <string name="app_name">یادآور اقساط</string>
 
     <string name="menu_home">تنظیمات</string>
-    <string name="menu_gallery">بکاپ</string>
+    <string name="menu_gallery">پشتیبان گیری</string>
     <string name="menu_slideshow">بازیابی</string>
     <string name="menu_aboutus">درباره ما</string>
 
@@ -21,5 +21,8 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="title_activity_add_new_loan">ثبت مشخصات قسط جدید</string>
+    <string name="group_menu_settings">گروه ثبت تنظیمات</string>
+    <string name="group_menu_bakup_restore">گروه پشتیبان گیری</string>
+    <string name="group_menu_about_us">گروه توضیحات برنامه</string>
 
 </resources>

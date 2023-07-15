@@ -3,22 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_backup"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_restore"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_aboutus"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_aboutus" />
-    </group>
+    <item android:title="@string/group_menu_settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/menu_home" />
+        </menu>
+    </item>
+    <item android:title="@string/group_menu_bakup_restore">
+        <menu>
+            <item
+                android:id="@+id/nav_backup"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/menu_gallery" />
+            <item
+                android:id="@+id/nav_restore"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/menu_slideshow" />
+        </menu>
+    </item>
+    <item android:title="@string/group_menu_about_us">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/menu_aboutus" />
+        </menu>
+    </item>
 </menu>

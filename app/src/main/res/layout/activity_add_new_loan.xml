@@ -10,19 +10,14 @@
     android:paddingTop="?attr/actionBarSize"
     tools:context=".AddNewLoanActivity">
 
-    <TextView
-        android:id="@+id/text_add_new_loan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/title_add_new_loan_properties"
+    <FrameLayout
+        android:id="@+id/fragment_add_new_loan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layoutDirection="rtl"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_view_add_new_loan"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav_view_add_new_loan"
@@ -37,5 +32,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
