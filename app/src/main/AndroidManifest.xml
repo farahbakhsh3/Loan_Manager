@@ -15,11 +15,9 @@
         <activity
             android:name=".AddNewLoanActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
             android:label="@string/title_activity_add_new_loan"
-            android:theme="@style/Theme.LoanManager">
-        </activity>
-
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LoanManager"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
