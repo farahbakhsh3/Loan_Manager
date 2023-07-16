@@ -3,30 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="@string/group_menu_settings">
+    <item android:title="@string/group_menu_settings"
+        android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
+        >
         <menu>
             <item
                 android:id="@+id/nav_settings"
+                android:layoutDirection="rtl"
+                android:fontFamily="@font/vazir"
                 android:icon="@drawable/baseline_settings_24"
                 android:title="@string/menu_home" />
         </menu>
     </item>
-    <item android:title="@string/group_menu_bakup_restore">
+    <item android:title="@string/group_menu_bakup_restore"
+        android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
+        >
         <menu>
             <item
                 android:id="@+id/nav_backup"
+                android:layoutDirection="rtl"
+                android:fontFamily="@font/vazir"
                 android:icon="@drawable/baseline_backup_24"
                 android:title="@string/menu_gallery" />
             <item
                 android:id="@+id/nav_restore"
+                android:layoutDirection="rtl"
+                android:fontFamily="@font/vazir"
                 android:icon="@drawable/baseline_settings_backup_restore_24"
                 android:title="@string/menu_slideshow" />
         </menu>
     </item>
-    <item android:title="@string/group_menu_about_us">
+    <item android:title="@string/group_menu_about_us"
+        android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
+        >
         <menu>
             <item
                 android:id="@+id/nav_aboutus"
+                android:layoutDirection="rtl"
+                android:fontFamily="@font/vazir"
                 android:icon="@drawable/baseline_account_circle_24"
                 android:title="@string/menu_aboutus" />
         </menu>

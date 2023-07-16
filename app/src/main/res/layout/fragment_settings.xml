@@ -3,12 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layoutDirection="rtl"
+    android:fontFamily="@font/vazir"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Settings.SettingsFragment">
 
     <TextView
         android:id="@+id/text_settings"
+        android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

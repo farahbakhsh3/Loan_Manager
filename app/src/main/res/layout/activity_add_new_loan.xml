@@ -8,13 +8,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize"
-    tools:context=".AddNewLoanActivity">
+    tools:context=".AddNewLoanActivity"
+    android:fontFamily="@font/vazir">
 
     <FrameLayout
         android:id="@+id/fragment_add_new_loan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
         app:layout_constraintBottom_toTopOf="@id/bottom_nav_view_add_new_loan"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -29,6 +31,7 @@
         android:layoutDirection="rtl"
         app:menu="@menu/bottom_nav_menu_add_new_loan"
         android:theme="@style/BottomNavTheme"
+        android:fontFamily="@font/vazir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

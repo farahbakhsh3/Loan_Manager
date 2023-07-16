@@ -15,10 +15,10 @@
 
     <string name="AddActionMenu">افزودن قسط جدید</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">باز کردن کشوی پیمایش</string>
+    <string name="navigation_drawer_close">بستن کشوی پیمایش</string>
     <string name="nav_header_subtitle">farahbakhsh3@gmail.com</string>
-    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_desc">عنوان کشوی پیمایش</string>
 
     <string name="title_activity_add_new_loan">ثبت مشخصات قسط جدید</string>
     <string name="group_menu_settings">گروه ثبت تنظیمات</string>

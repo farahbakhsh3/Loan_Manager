@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
+    android:fontFamily="@font/vazir"
     tools:context=".ui.AddNewLoan.FragmentAddNewLoanProperties">
 
     <TextView
+        android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/title_add_new_loan_properties"

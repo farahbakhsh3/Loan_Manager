@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\Desktop\\TicTacToe\\myKeystore.jks')
+            storePassword 'Amin123'
+            keyAlias 'tictactao_3x3'
+            keyPassword 'Amin123'
+        }
+    }
     namespace 'ir.farahbakhsh3.LoanManager'
     compileSdk 34
 

@@ -5,18 +5,21 @@
         android:id="@+id/navigation_daftarche"
         android:icon="@drawable/baseline_library_books_24"
         android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_taghvim"
         android:icon="@drawable/baseline_calendar_today_24"
         android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
         android:title="@string/title_dashboard" />
 
     <item
         android:id="@+id/navigation_moavagh"
         android:icon="@drawable/baseline_alarm_24"
         android:layoutDirection="rtl"
+        android:fontFamily="@font/vazir"
         android:title="@string/title_notifications" />
 
 </menu>

@@ -1,6 +1,5 @@
-<resources>
-
-    <style name="Theme.LoanManager" parent="Theme.MaterialComponents">
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LoanManager" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -11,15 +10,5 @@
         <item name="colorOnSecondary">@color/black</item>
 
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-
     </style>
-
-    <style name="Theme.LoanManager.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
-    <style name="Theme.LoanManager.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
-    <style name="Theme.LoanManager.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
-
-    <style name="BottomNavTheme">
-        <item name="colorPrimary">#FF5722</item>
-    </style>
-
 </resources>
