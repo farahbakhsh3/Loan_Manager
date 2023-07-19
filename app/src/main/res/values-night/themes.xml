@@ -11,4 +11,18 @@
 
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
+
+    <style name="Theme.LoanManager.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.LoanManager.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.LoanManager.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="BottomNavTheme">
+        <item name="colorPrimary">#FF5722</item>
+    </style>
+
+
 </resources>

@@ -5,7 +5,7 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('D:\\Desktop\\TicTacToe\\myKeystore.jks')
+            storeFile file('C:\\Users\\farah\\Desktop\\myKeystore.jks')
             storePassword 'Amin123'
             keyAlias 'tictactao_3x3'
             keyPassword 'Amin123'
@@ -19,7 +19,7 @@ android {
         minSdk 24
         targetSdk 34
         versionCode 3
-        versionName '1.1'
+        versionName '1.2'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
