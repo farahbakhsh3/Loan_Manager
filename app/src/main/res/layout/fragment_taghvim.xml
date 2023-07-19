@@ -40,7 +40,8 @@
         app:pcv_eventUnderlineColor="#BF3206"
         app:pcv_fontSize="12pt"
         app:pcv_headersFontSize="10pt"
-        app:pcv_todayBackground="@android:color/holo_green_light" />
+        app:pcv_todayBackground="@android:color/holo_green_light"
+        />
 
     <TextView
         android:id="@+id/text_persiandate"

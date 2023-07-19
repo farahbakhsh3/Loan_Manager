@@ -16,9 +16,9 @@ android {
 
     defaultConfig {
         applicationId "ir.farahbakhsh3.LoanManager"
-        minSdk 24
+        minSdk 21
         targetSdk 34
-        versionCode 3
+        versionCode 4
         versionName '1.2'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

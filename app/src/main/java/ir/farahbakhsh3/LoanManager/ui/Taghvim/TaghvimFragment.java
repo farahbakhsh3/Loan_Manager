@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -63,28 +64,10 @@ public class TaghvimFragment extends Fragment {
 
                 for (CalendarEvent e : calendar.getLocalEventsForDay(date)) {
                     //Toast.makeText(TaghvimFragment.this.getContext(), e.getTitle(), Toast.LENGTH_LONG).show();
-                    Snackbar.make(TaghvimFragment.this.requireView(), e.getTitle(), Snackbar.LENGTH_LONG)
+                    Snackbar.make(TaghvimFragment.this.requireView(), e.getTitle(),
+                                    Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 }
-            }
-        });
-
-        persianCalendarView.setOnDayLongClickedListener(new OnDayLongClickedListener() {
-            @Override
-            public void onLongClick(PersianDate date) {
-                String pDate = calendar.getWeekDayName(date) + " " +
-                        calendar.formatNumber(date.getDayOfMonth()) + " " +
-                        calendar.getMonthName(date) + " " +
-                        calendar.formatNumber(date.getYear());
-
-                calendar.addLocalEvent(new CalendarEvent(
-                        date, "Custom " + pDate + " event", true)
-                );
-                calendar.addLocalEvent(new CalendarEvent(
-                        date.clone().rollDay(1, false),
-                        "Custom " + pDate + " event", false)
-                );
-                //persianCalendarView.update();
             }
         });
 
@@ -108,9 +91,9 @@ public class TaghvimFragment extends Fragment {
         binding.textMonthYear.setText(pDate);
 
         calendar.setHighlightOfficialEvents(false);
-//        calendar.setColorBackground(getResources().getColor(android.R.color.holo_blue_dark));
+        calendar.setHighlightLocalEvents(true);
+        //calendar.setColorBackground(ContextCompat.getColor(root.getContext(), R.color.white));
         persianCalendarView.update();
-
 
         return root;
     }

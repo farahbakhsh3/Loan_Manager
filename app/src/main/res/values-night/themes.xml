@@ -21,7 +21,7 @@
     <style name="Theme.LoanManager.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="BottomNavTheme">
-        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimary">#FFB300</item>
     </style>
 
 </resources>
