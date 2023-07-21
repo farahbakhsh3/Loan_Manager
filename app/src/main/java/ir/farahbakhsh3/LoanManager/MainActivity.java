@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.appBarMain.toolbarMain);
 
+        SQLiteHelper sqLiteHelper = new SQLiteHelper(this);
 //        binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
