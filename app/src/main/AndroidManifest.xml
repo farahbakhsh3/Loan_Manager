@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/icn2"
+        android:icon="@mipmap/icn1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/icn2"
+        android:roundIcon="@mipmap/icn1"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoanManager"
         tools:targetApi="31">
@@ -17,7 +17,9 @@
             android:exported="true"
             android:label="@string/title_activity_add_new_loan"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.LoanManager"/>
+            android:theme="@style/Theme.LoanManager">
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
