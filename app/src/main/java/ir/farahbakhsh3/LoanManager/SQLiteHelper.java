@@ -37,11 +37,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         );
         db.execSQL("CREATE TABLE [Settings]([NotifTime] NVARCHAR(5));"
         );
-        db.execSQL("CREATE VIEW [maxLoanID] " +
-                "AS " +
-                "SELECT IFNULL (MAX ([main].[Loans].[LoanID]), 0) + 1 AS [maxLoanID] " +
-                "FROM   [main].[Loans]; "
-        );
         db.execSQL("CREATE VIEW [ViewLoansPayment] " +
                 "AS " +
                 "SELECT  " +
@@ -64,9 +59,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(@NonNull SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("drop table if exists [main].[Loans];  ");
-        db.execSQL("drop table if exists [main].[LoanPayment];  ");
-        db.execSQL("drop table if exists [main].[Settings];  ");
+//        db.execSQL("drop table if exists [main].[Loans];  ");
+//        db.execSQL("drop table if exists [main].[LoanPayment];  ");
+//        db.execSQL("drop table if exists [main].[Settings];  ");
     }
 
 //    public void DeleteScores() {
