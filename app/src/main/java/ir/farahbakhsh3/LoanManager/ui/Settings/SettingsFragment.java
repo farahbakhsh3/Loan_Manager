@@ -30,16 +30,16 @@ public class SettingsFragment extends Fragment {
         final TextView textView = binding.textSettings;
         settingsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        SQLiteHelper sqLiteHelper = new SQLiteHelper();
-        SQLiteDatabase db = getWritableDatabase();
-        ContentValues cv = new ContentValues();
-        cv.put("game_level", game_level);
-        cv.put("human", human);
-        cv.put("draw", draw);
-        cv.put("ai", ai);
-        db.insert("Scores", null, cv);
-
-        db.close();
+//        SQLiteHelper sqLiteHelper = new SQLiteHelper();
+//        SQLiteDatabase db = getWritableDatabase();
+//        ContentValues cv = new ContentValues();
+//        cv.put("game_level", game_level);
+//        cv.put("human", human);
+//        cv.put("draw", draw);
+//        cv.put("ai", ai);
+//        db.insert("Scores", null, cv);
+//
+//        db.close();
 
         return root;
     }
