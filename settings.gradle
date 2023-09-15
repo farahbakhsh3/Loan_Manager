@@ -11,7 +11,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        jcenter()
     }
 }
-rootProject.name = "یادآور اقساط"
+rootProject.name = "LoanManager"
 include ':app'

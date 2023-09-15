@@ -1,19 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
-    android:fontFamily="@font/vazir"
     tools:context=".ui.AddNewLoan.FragmentAddNewLoanProperties">
 
-    <TextView
-        android:layoutDirection="rtl"
-        android:fontFamily="@font/vazir"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/title_add_new_loan_properties"
-        />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#FFEFAB"
+            android:fontFamily="@font/iransansweb"
+            android:layoutDirection="rtl"
+            android:text="@string/title_add_new_loan_properties"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTarikhGhest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTarikhGhest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransansweb"
+                android:layoutDirection="rtl"
+                android:text="@string/TarikhGhest"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:hint="@string/tarikh_hint"
+                android:id="@+id/textViewTarikhAvalinGhest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransansweb_bold"
+                android:layoutDirection="rtl"
+                android:textAlignment="center"
+                android:text=""
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:tooltipText="hhhhhhhhhhhhh"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
 
 </FrameLayout>

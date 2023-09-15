@@ -8,10 +8,11 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layoutDirection="rtl"
-        android:fontFamily="@font/vazir"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/title_add_new_loan_save" />
+        android:fontFamily="@font/iransansweb_bold"
+        android:layoutDirection="rtl"
+        android:text="@string/title_add_new_loan_save"
+        android:textSize="20sp" />
 
 </FrameLayout>

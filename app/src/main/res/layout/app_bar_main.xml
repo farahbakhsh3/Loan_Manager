@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layoutDirection="rtl"
-    android:fontFamily="@font/vazir"
+    android:fontFamily="@font/iransansweb"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
-        android:fontFamily="@font/vazir"
+        android:fontFamily="@font/iransansweb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.LoanManager.AppBarOverlay"
@@ -18,7 +18,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_main"
-            android:fontFamily="@font/vazir"
+            android:fontFamily="@font/iransansweb"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             />
@@ -29,7 +29,7 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav_view_main"
-        android:fontFamily="@font/vazir"
+        android:fontFamily="@font/iransansweb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/windowBackground"

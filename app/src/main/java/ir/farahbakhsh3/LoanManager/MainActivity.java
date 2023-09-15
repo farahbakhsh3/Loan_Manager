@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private AppBarConfiguration mAppBarConfiguration2;
     private ActivityMainBinding binding;
+    private long pressedTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,9 +110,16 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+            Toast.makeText(getBaseContext(), R.string.back_to_exit, Toast.LENGTH_SHORT).show();
         } else {
-            super.onBackPressed();
+            if (pressedTime + 2000 > System.currentTimeMillis()) {
+                super.onBackPressed();
+                finish();
+            } else {
+                Toast.makeText(getBaseContext(), R.string.back_to_exit, Toast.LENGTH_SHORT).show();
+            }
         }
+        pressedTime = System.currentTimeMillis();
     }
 
     @Override

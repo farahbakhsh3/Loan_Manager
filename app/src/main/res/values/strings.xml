@@ -6,8 +6,11 @@
     <string name="menu_slideshow">بازیابی</string>
     <string name="menu_aboutus">درباره ما</string>
 
+    <string name="title_activity_add_new_loan">ثبت قسط جدید</string>
     <string name="title_add_new_loan_properties">مشخصات قسط</string>
     <string name="title_add_new_loan_save">ثبت نهایی</string>
+    <string name="TarikhGhest">"تاریخ اولین قسط:"</string>
+    <string name="tarikh_hint">0000/00/00</string>
 
     <string name="title_home">دفترچه</string>
     <string name="title_dashboard">تقویم</string>
@@ -17,9 +20,11 @@
 
     <string name="nav_header_subtitle">farahbakhsh3@gmail.com</string>
 
-    <string name="title_activity_add_new_loan">ثبت مشخصات قسط جدید</string>
     <string name="group_menu_settings">گروه ثبت تنظیمات</string>
     <string name="group_menu_bakup_restore">گروه پشتیبان گیری</string>
     <string name="group_menu_about_us">گروه توضیحات برنامه</string>
+
+
+    <string name="back_to_exit">برای خروج دوباره کلید برگشت را لمس کنید.</string>
 
 </resources>
