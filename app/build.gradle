@@ -5,7 +5,7 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('D:\\Desktop\\LoanManager\\app\\myKeystore.jks')
+            storeFile file('D:\\My Prog\\AndroidProjects\\LoanManager\\app\\myKeystore.jks')
             storePassword 'Amin123'
             keyAlias 'key0'
             keyPassword 'Amin123'
@@ -18,8 +18,8 @@ android {
         applicationId "ir.farahbakhsh3.LoanManager"
         minSdk 21
         targetSdk 34
-        versionCode 15
-        versionName '1.5'
+        versionCode 16
+        versionName '1.6'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
@@ -47,8 +47,7 @@ android {
         includeInApk false
         includeInBundle false
     }
-    buildToolsVersion '25.0.0'
-    ndkVersion '25.2.9519653'
+    ndkVersion '26.0.10792818'
 }
 
 dependencies {

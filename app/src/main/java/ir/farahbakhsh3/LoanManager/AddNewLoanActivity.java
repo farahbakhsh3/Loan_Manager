@@ -13,20 +13,22 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import ir.farahbakhsh3.LoanManager.databinding.ActivityAddNewLoanBinding;
 import ir.farahbakhsh3.LoanManager.ui.AddNewLoan.FragmentAddNewLoanProperties;
 import ir.farahbakhsh3.LoanManager.ui.AddNewLoan.FragmentAddNewLoanSave;
 
 public class AddNewLoanActivity extends AppCompatActivity {
 
-    public static final String LOAN_PREFERENCES = "Loan_Preferences";
+    private static final String LOAN_PREFERENCES = "Loan_Preferences";
+    private ActivityAddNewLoanBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //ActivityAddNewLoanBinding binding = ActivityAddNewLoanBinding.inflate(getLayoutInflater());
-        //binding.getRoot());
-        setContentView(R.layout.activity_add_new_loan);
+        binding = ActivityAddNewLoanBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -57,21 +59,17 @@ public class AddNewLoanActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
     private void FragmentReplacer(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
 //        ft.setCustomAnimations(R.anim.enter, R.anim.exit);
         ft.replace(R.id.fragment_add_new_loan, fragment);
         ft.commit();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        binding = null;
     }
 }

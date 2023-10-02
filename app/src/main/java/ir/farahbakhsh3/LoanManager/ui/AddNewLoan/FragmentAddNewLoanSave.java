@@ -17,37 +17,19 @@ import android.view.ViewGroup;
 import ir.farahbakhsh3.LoanManager.R;
 
 public class FragmentAddNewLoanSave extends Fragment {
-
-//    private static final String ARG_PARAM1 = "param1";
-//    private static final String ARG_PARAM2 = "param2";
-//    private String mParam1;
-//    private String mParam2;
-    private SharedPreferences mPrefs;
-    private String Tarikh = "";
+    private static final String LOAN_PREFERENCES = "Loan_Preferences";
+    private static final String ARG_TARIKH = "Tarikh";
+    private String mTarikh = "";
 
     public FragmentAddNewLoanSave() {
-
     }
-//
-//    public static FragmentAddNewLoanSave newInstance(String param1, String param2) {
-//        FragmentAddNewLoanSave fragment = new FragmentAddNewLoanSave();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
-        mPrefs = getActivity().getSharedPreferences(getActivity().getLocalClassName(), MODE_PRIVATE);
-        Tarikh = mPrefs.getString("Tarikh", "");
-        Log.d("Tarikh_SaveFrag",Tarikh.toString());
+
+        SharedPreferences settings = getActivity().getSharedPreferences(LOAN_PREFERENCES, MODE_PRIVATE);
+        mTarikh = settings.getString(ARG_TARIKH, "");
     }
 
     @Override

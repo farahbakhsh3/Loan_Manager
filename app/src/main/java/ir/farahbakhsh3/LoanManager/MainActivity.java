@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.appBarMain.toolbarMain);
 
         SQLiteHelper sqLiteHelper = new SQLiteHelper(this);
+
 //        binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -78,23 +79,16 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
 
-//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
-//        {
-//            @Override
-//            public boolean onNavigationItemSelected (@NonNull MenuItem item){
-//                int id = item.getItemId();
-//                if (id == R.id.nav_backup)
-//                    Toast.makeText(binding.getRoot().getContext(), " --- backup ---", Toast.LENGTH_LONG);
-//
-//                return true;
-//            }
-//        });
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        binding = null;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }

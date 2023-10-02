@@ -47,7 +47,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
                 "       [main].[Loans].[LoanFirstPay],  " +
                 "       [main].[Loans].[LoanPeriod],  " +
                 "       [main].[Loans].[LoanPaymentAmount],  " +
-                "       [main].[Loans].[LaonPaymentReminderAlertDays],  " +
                 "       [main].[LoanPayment].[PaymentID],  " +
                 "       [main].[LoanPayment].[PaymentDate],  " +
                 "       [main].[LoanPayment].[PaymentIsPayed],  " +
@@ -59,9 +58,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(@NonNull SQLiteDatabase db, int oldVersion, int newVersion) {
-//        db.execSQL("drop table if exists [main].[Loans];  ");
-//        db.execSQL("drop table if exists [main].[LoanPayment];  ");
-//        db.execSQL("drop table if exists [main].[Settings];  ");
+        db.execSQL("drop table if exists [main].[Loans];  ");
+        db.execSQL("drop table if exists [main].[LoanPayment];  ");
+        db.execSQL("drop table if exists [main].[Settings];  ");
     }
 
 //    public void DeleteScores() {

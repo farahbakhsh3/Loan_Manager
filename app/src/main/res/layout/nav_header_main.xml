@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layoutDirection="rtl"
-    android:fontFamily="@font/vazir"
+    android:fontFamily="@font/iransansweb"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:background="@drawable/side_nav_bar"
@@ -20,27 +20,28 @@
         android:id="@+id/imageView"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:fontFamily="@font/vazir"
+        android:fontFamily="@font/iransansweb"
         android:layoutDirection="rtl"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         app:srcCompat="@mipmap/icn1" />
 
     <TextView
         android:layoutDirection="rtl"
-        android:fontFamily="@font/vazir"
+        android:fontFamily="@font/iransansweb_bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/app_name"
-        android:textSize="14pt"
+        android:textSize="22sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
         android:id="@+id/textView"
-        android:layoutDirection="rtl"
-        android:fontFamily="@font/vazir"
+        android:layoutDirection="ltr"
+        android:fontFamily="sans-serif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nav_header_subtitle"
+        android:textSize="12sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 </LinearLayout>

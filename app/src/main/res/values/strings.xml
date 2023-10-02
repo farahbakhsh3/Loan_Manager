@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">یادآور اقساط</string>
+    <string name="app_name">مدیریت اقساط</string>
 
     <string name="menu_home">تنظیمات</string>
     <string name="menu_gallery">پشتیبان گیری</string>
@@ -12,7 +12,7 @@
     <string name="TarikhGhest">"تاریخ اولین قسط:"</string>
     <string name="tarikh_hint">0000/00/00</string>
 
-    <string name="title_home">دفترچه</string>
+    <string name="title_home">اقساط</string>
     <string name="title_dashboard">تقویم</string>
     <string name="title_notifications">معوقات</string>
 
@@ -24,7 +24,6 @@
     <string name="group_menu_bakup_restore">گروه پشتیبان گیری</string>
     <string name="group_menu_about_us">گروه توضیحات برنامه</string>
 
-
-    <string name="back_to_exit">برای خروج دوباره کلید برگشت را لمس کنید.</string>
+    <string name="back_to_exit">جهت خـروج، دوباره کلید برگشت را لمس کنید.</string>
 
 </resources>
